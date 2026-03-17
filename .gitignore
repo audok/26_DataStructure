@@ -362,6 +362,6 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-**/DataStructure.slnx
-**/DataStructure.vcxproj
-**/DataStructure.vcxproj.filters
+**/26_DataStructure.slnx
+**/26_DataStructure.vcxproj
+**/26_DataStructure.vcxproj.filters
