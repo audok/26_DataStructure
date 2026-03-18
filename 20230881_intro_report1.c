@@ -1,36 +1,25 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
+
 int main() {
-    int scores[30]; // 30명의 학생 성적 저장
+    int scores[10]; // 10명의 학생 성적 저장
     int sum = 0;
     double average;
-    int studentNumber;
 
     // 난수 생성 초기화
     srand(time(0));
 
-    // 성적 데이터 초기화
-    for (int i = 0; i < 30; i++) {
+    // 성적 입력
+    for (int i = 0; i < 10; i++) {
         scores[i] = rand() % 101; // 0 ~ 100 사이의 난수 생성
         sum += scores[i];
     }
 
     // 평균 계산
-    average = sum / 30.0;
+    average = sum / 10.0;
     printf("학급 평균 점수: %.2f\n", average);
-
-    // 특정 학생 점수 검색
-    printf("학생 번호를 입력하세요 (1 ~ 30): ");
-    scanf("%d", &studentNumber);
-
-    if (studentNumber >= 1 && studentNumber <= 30) {
-        printf("%d번 학생의 점수: %d\n", studentNumber, scores[studentNumber - 1]);
-    }
-    else {
-        printf("유효하지 않은 학생 번호입니다.\n");
-    }
 
     return 0;
 }
