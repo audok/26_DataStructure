@@ -365,3 +365,4 @@ FodyWeavers.xsd
 **/26_DataStructure.slnx
 **/26_DataStructure.vcxproj
 **/26_DataStructure.vcxproj.filters
+**/.editorconfig
