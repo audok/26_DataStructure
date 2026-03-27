@@ -74,6 +74,8 @@ int main() {
     for (int i = 0; str[i] != '\0'; i++) {
         push(&s, str[i]);
 	}
+
+    printf("거꾸로 된 문자열: ");
     for (int i = 0; !isEmpty(&s); i++) {
         printf("%c", pop(&s));
 	}
